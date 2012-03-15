@@ -362,10 +362,14 @@ var parseMyOrder = function(data){
 
 $(document).ready(function(){
 
-	var myform = $('#myorder');
+	var myform = $('#myorder'),
+		myerrorslink = $('#myerrorslink')
+	;
 	
 	myform.validate({
-		invalidHandler: function(form, validator){},
+		invalidHandler: function(form, validator){
+			myerrorslink.click();
+		},
 		submitHandler: function(){
 			var data = myform.serializeArray();
 			parseMyOrder(data);

@@ -31,3 +31,7 @@ label.error{
 	color: #cc0000;
 }
 
+#myerrorslink {
+	display: none;
+}
+
