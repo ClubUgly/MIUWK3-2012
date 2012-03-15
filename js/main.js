@@ -353,3 +353,23 @@ window.addEventListener("DOMContentLoaded", function(){
 	save.addEventListener("click", validate);
 
 });
+
+var parseMyOrder = function(data){
+	// uses form data here;
+	console.log(data);
+
+};
+
+$(document).ready(function(){
+
+	var myform = $('#myorder');
+	
+	myform.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler: function(){
+			var data = myform.serializeArray();
+			parseMyOrder(data);
+		}
+	});
+
+});

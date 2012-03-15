@@ -22,6 +22,7 @@
 	<!-- StyleSheets under here -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -75,7 +76,7 @@
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#favorite" data-icon="star">Favorite</a></li>
 					<li><a href="#search" data-icon="search">Search</a></li>
-					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="#order" data-icon="info">Order</a></li>
 					<li><a href="b.html" data-icon="delete" class="ui-btn-active">B-App</a></li>
 				
 				</ul>
@@ -1658,7 +1659,147 @@
 			
 			</div>
 		</div>			
-	</div>									
+	</div>
+	
+<!--My Form Addon-->	
+	<div data-role="page" id="order" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Place Your Order</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<form action="" method="post" id="myorder">
+		
+				<div data-role="fieldcontain">
+					<label for="ordername">Name:</label>
+					<input type="text" name="ordername" id="ordername" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderemail">Email:</label>
+					<input type="text" name="orderemail" id="orderemail" class="required email"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderhomepage">Home Page:</label>
+					<input type="text" name="orderhomepage" id="orderhomepage" class="required url" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="ordergender">Gender:</label>
+					<select data-role="slider">
+						<option value="off">Male</option>
+						<option value="on">Female</option>
+					
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Are you 18 and Up?</legend>
+						<input type="radio" value="No" name="verify" id="verify-1" class="required"/>
+						<label for="verify-1">No</label>
+						<input type="radio" value="Yes" name="verify" id="verify-2" />
+						<label for="verify-2">Yes</label>
+					</fieldset>
+				</div>
+				
+<!-- Meaningful commit using datebox plugin as discussed in wimba + above and over-->	
+				<div data-role="fieldcontain">
+   					<label for="mydate">Date of Birth:</label>
+					<input name="mydate" id="mydate" type="date" data-role="datebox"
+   data-options='{"mode": "flipbox"}'>
+				</div>
+<!-- meaningful commit end-->
+				
+				<div data-role="fieldcontain">
+					<label for="myordertype">Flower Selection:</label>
+					<select name="myordertype" id="myordertype" data-native-menu="false" class="required">
+						<option data-placeholder="true">Please Select One</option>
+						<optgroup label="Daisies">
+							<option value="daisy-1a">White Daisy Basket</option>
+							<option value="daisy-1b">Basket of Sunshine</option>
+							<option value="daisy-1c">Gerbera Daisy Bouquet</option>
+							<option value="daisy-1d">Lemonade in a Pitcher</option>
+							<option value="daisy-1e">Elegant Wishes Vase</option>
+						</optgroup>
+						<optgroup label="Lilies">
+							<option value="lily-1a">All White Lilies</option>
+							<option value="lily-1b">Stargazer Lilies</option>
+							<option value="lily-1c">lilies in a Pitcher</option>
+							<option value="lily-1d">Pink Perfection Lilies</option>
+							<option value="lily-1e">Elegance Calla Lilies</option>
+						</optgroup>
+						<optgroup label="Orchids">
+							<option value="orchid-1a">Exotic Breeze Orchids</option>
+							<option value="orchid-1b">Magenta Orchids</option>
+							<option value="orchid-1c">Lavender Mist Orchids</option>
+							<option value="orchid-1d">White Orchid Bamboo</option>
+							<option value="orchid-1e">Botanical Orchid Duet</option>
+						</optgroup>
+						<optgroup label="Roses">
+							<option value="rose-1a">Passion Pink Roses</option>
+							<option value="rose-1b">Red Long Stem Roses</option>
+							<option value="rose-1c">Passion White Roses</option>
+							<option value="rose-1d">Assorted Roses</option>
+							<option value="rose-1e">Passion Yellow Roses</option>
+						</optgroup>
+						<optgroup label="Tulips">
+							<option value="tulip-1a">Timeless Tulips</option>
+							<option value="tulip-1b">Perfectly Pink Tulips</option>
+							<option value="tulip-1c">Spring Country Tulips</option>
+							<option value="tulip-1d">Yellow Tulips in a Pitcher</option>
+							<option value="tulip-1e">Spring Orange Tulips</option>
+						</optgroup>
+					
+					
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="order">Quantity:</label><br />
+					<input type="range" name="ordertotal" id="ordertotal" value="3" min="1" max="50" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderinfo">Additional Info:</label>
+					<textarea></textarea>
+				</div>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Agree to TOS?</legend>
+						<input type="checkbox" value="Yes I agree." name="verifyterms" id="verifytos" class="required"/>
+						<label for="verifytos">Yes I agree.</label>
+					</fieldset>
+				</div>
+				
+<!-- Meaningful commit placing reset form first and submit last as discussed in wimba-->					<div data-role="fieldcontain">
+					<input type="reset" value="Reset" data-theme="a" />
+					<input type="submit" value="Submit" data-theme="b" />
+				</div>
+<!-- meaningful commit end-->
+		
+			</form>
+		
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="order">
+			<div data-role="navbar">
+				<ul>				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>										
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
