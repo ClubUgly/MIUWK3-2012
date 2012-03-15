@@ -24,3 +24,10 @@ margin-right: 0;
 
 }
 
+/*Added error color to make text stand apart (meaningful commit).*/
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: #cc0000;
+}
+
