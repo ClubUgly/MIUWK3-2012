@@ -1,6 +1,6 @@
     //John Williams
-    //March 8, 2012
-    //MIU Deliverable 2
+    //March 15, 2012
+    //MIU Deliverable 3
     //The Flower Shop
 
 //alert("JavaScript works!");
@@ -369,6 +369,14 @@ $(document).ready(function(){
 	myform.validate({
 		invalidHandler: function(form, validator){
 			myerrorslink.click();
+			var html = '';
+			for(var key in validator.submitted){
+				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+				var fieldName = legend.length ? legend.text() : label.text();
+				html += '<li>' + fieldName +'</li>';
+			};
+			$("#ordererrors ul").html(html);
 		},
 		submitHandler: function(){
 			var data = myform.serializeArray();
