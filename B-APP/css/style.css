@@ -1,0 +1,26 @@
+.ui-page {
+	background: transparent url(../images/os-bg.png);
+}
+
+/*To disable truncation for list descriptions */
+.ui-li-desc {
+white-space: normal;
+}
+
+#singleslist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#singleslist .ui-grid-b div {
+	text-align: center;
+}
+
+/*Meaningful edit to stop truncation in header and etc. */
+.ui-header .ui-title, .ui-footer .ui-title {
+
+margin-left: 0;
+margin-right: 0;
+
+}
+
