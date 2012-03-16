@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	//JSON OBJECT Which will auto populate local storage.
-	function autoFillData(){
+/*	function autoFillData(){
 		var json = {
 			"contact1": {
 				"fname": ["Name:", "Jay Williams"],
@@ -179,6 +179,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"terms": ["TOS:", "Yes"]
 			}						
 		};
+*/		
 		//Store the JSON OBJECT in local storage
 		for(var n in json){
 			var id 			= Math.floor(Math.random()*100000001);
