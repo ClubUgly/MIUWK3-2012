@@ -6,56 +6,22 @@
 .ui-li-desc {
 white-space: normal;
 }
-#news1 .ui-grid-b .ui-bar {
+
+#singleslist .ui-grid-b .ui-bar {
 	margin: 20px;
 	padding: 15px;	
 }
 
-#news1 .ui-grid-b div {
-	text-align: center;
-}
-
-#news2 .ui-grid-b .ui-bar {
-	margin: 20px;
-	padding: 15px;	
-}
-
-#news2 .ui-grid-b div {
-	text-align: center;
-}
-
-#news3 .ui-grid-b .ui-bar {
-	margin: 20px;
-	padding: 15px;	
-}
-
-#news3 .ui-grid-b div {
-	text-align: center;
-}
-
-#news4 .ui-grid-b .ui-bar {
-	margin: 20px;
-	padding: 15px;	
-}
-
-#news4 .ui-grid-b div {
-	text-align: center;
-}
-
-#news5 .ui-grid-b .ui-bar {
-	margin: 20px;
-	padding: 15px;	
-}
-
-#news5 .ui-grid-b div {
+#singleslist .ui-grid-b div {
 	text-align: center;
 }
 
 /*Meaningful edit to stop truncation in header and etc. */
 .ui-header .ui-title, .ui-footer .ui-title {
 
-	margin-left: 0;
-	margin-right: 0;
+margin-left: 0;
+margin-right: 0;
+
 }
 
 /*Added error color to make text stand apart (meaningful commit).*/
