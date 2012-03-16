@@ -138,7 +138,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var imageLi = document.createElement('li');
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement('img');
-		var setSrc = newImg.setAttribute("src", "images/"+ catName + ".png");
+		var setSrc = newImg.setAttribute("src", "images/"+ catName + ".jpg");
 		imageLi.appendChild(newImg);
 	}
 	
@@ -178,14 +178,14 @@ window.addEventListener("DOMContentLoaded", function(){
 				"comments": ["Additional Info:", "How soon will I get them?"],
 				"terms": ["TOS:", "Yes"]
 			}						
-		};
-*/		
+		}; 
+		
 		//Store the JSON OBJECT in local storage
 		for(var n in json){
 			var id 			= Math.floor(Math.random()*100000001);
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
-	}
+	}*/
 	
 	// make item links
 	//create the edit and delete links for each stored item when displayed.
@@ -338,7 +338,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	//Variable defaults
-	var flowerSelection = ["--Choose your flower type--", "Daisies", "Lilies", "Orchids", "Roses", "Tulips"],
+	var flowerSelection = ["--Choose your flower type--", "Daisies", "Lilies", "Orchids", "Roses", "Timeless Tulips"],
 		sexValue,
 		termsValue = "No",
 		errMsg = $('errors');	

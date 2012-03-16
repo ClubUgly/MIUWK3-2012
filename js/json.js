@@ -3,6 +3,7 @@
     //MIU Deliverable 3
     //The Flower Shop
 
+	function autoFillData(){
 		var json = {
 			"contact1": {
 				"fname": ["Name:", "Jay Williams"],
@@ -20,7 +21,7 @@
 				"email": ["Email:", "alvin@gmail.com"],
 				"url": ["Url:", "www.google.com"],
 				"sex": ["Sex:", "Male"],
-				"group": ["Flower Type:", "Orchids"],
+				"group": ["Flower Type:", "Timeless Tulips"],
 				"borndate": ["Date of birth:", "2000-07-06"],
 				"quantity": ["Quantity:", "6"],
 				"comments": ["Additional Info:", "Include a mug!"],
@@ -236,3 +237,10 @@
 				"terms": ["TOS:", "Yes"]
 			}						
 		};
+		
+		//Store the JSON OBJECT in local storage
+		for(var n in json){
+			var id 			= Math.floor(Math.random()*100000001);
+			localStorage.setItem(id, JSON.stringify(json[n]));
+		}
+	}		
