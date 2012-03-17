@@ -23,6 +23,7 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.pagination.css">
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -463,7 +464,7 @@
 	<div data-role="page" id="limited" data-add-back-btn="true">
 	
 		<div data-role="header" data-position="fixed" data-theme="e">
-			<h1>Limited Editions Daisies</h1>
+			<h1>Limited Editions</h1>
 		</div>
 		
 		<div data-role="content">
@@ -472,23 +473,23 @@
 		
 				<div data-role="collapsible" data-collapsed="false" data-content-theme="d">
 					<h3>Stir Lemonade in a Vase</h3>
-					<p>Sunshine yellow daisies in a vase</p>
+					<a href="#limitede1"><p>Sunshine yellow daisies in a vase</p></a>
 				</div>
 				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
 					<h3>It's all about me</h3>
-					<p>Something to make you feel special</p>
+					<a href="#limitede2"><p>Something to make you feel special</p></a>
 				</div>	
 				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
 					<h3>Romance of Europe</h3>
-					<p>European styled daisies in a vase</p>
+					<a href="#limitede3"><p>European styled daisies in a vase</p></a>
 				</div>	
 				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
 					<h3>Lavender Dreams</h3>
-					<p>Spring lavender assortment in a vase</p>
+					<a href="#limitede4"><p>Spring lavender assortment in a vase</p></a>
 				</div>	
 				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
 					<h3>It's your day</h3>
-					<p>Send this vase assortment to his or her job</p>
+					<a href="#limitede5"><p>Send this vase assortment to his or her job</p></a>
 				</div>
 				
 			</div>	
@@ -512,7 +513,182 @@
 		</div>
 		
 	</div>	
+<!--Limited editions pagination-->
+	<div data-role="page" id="limitede1" data-add-back-btn="true">
 	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>Basket Edition</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<center><a href="#Construction"><img src="images/basketofsunshine.jpg" alt="1" width="200" height="200"><br />Basket of Sunshine</a></center>		
+				<ul data-role="pagination">
+					<li class="ui-pagination-prev"><a href="#limited">Home</a></li>
+					<li class="ui-pagination-next"><a href="#limitede2">Next</a></li>
+				</ul>
+					
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="grid">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="limitede2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>All About Me</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<center><a href="#Construction"><img src="images/allwhite.jpg" alt="1" width="200" height="200"><br />All White Lilies</a></center>		
+				<ul data-role="pagination">
+					<li class="ui-pagination-prev"><a href="#limitede1">Prev</a></li>
+					<li class="ui-pagination-next"><a href="#limitede3">Next</a></li>
+				</ul>
+					
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="grid">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="limitede3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>Romance of Europe</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<center><a href="#Construction"><img src="images/springcountry.jpg" alt="1" width="200" height="200"><br />Spring Country Tulips</a></center>		
+				<ul data-role="pagination">
+					<li class="ui-pagination-prev"><a href="#limitede2">Prev</a></li>
+					<li class="ui-pagination-next"><a href="#limitede4">Next</a></li>
+				</ul>
+					
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="grid">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="limitede4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>Lavender Dreams</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<center><a href="#Construction"><img src="images/lavendermist.jpg" alt="1" width="200" height="200"><br />Lavender Mist Orchids</a></center>		
+				<ul data-role="pagination">
+					<li class="ui-pagination-prev"><a href="#limitede3">Prev</a></li>
+					<li class="ui-pagination-next"><a href="#limitede5">Next</a></li>
+				</ul>
+					
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="grid">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="limitede5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>It's Your Day</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<center><a href="#Construction"><img src="images/stargazer.jpg" alt="1" width="200" height="200"><br />Stargazer Lilies</a></center>		
+				<ul data-role="pagination">
+					<li class="ui-pagination-prev"><a href="#limitede4">Prev</a></li>
+				</ul>
+					
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="grid">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>	
+				
+<!--end-->		
 	<div data-role="page" id="favorite" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="e">
 			<h1>My Favorites</h1>
@@ -542,6 +718,7 @@
 			</div>
 		</div>	
 	</div>
+
 	
 	<div data-role="page" id="search" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed" data-theme="e">
@@ -754,35 +931,7 @@
 			</div>
 		</div>			
 	</div>
-	
-<!--	<div data-role="page" id="daisylist5" data-add-back-btn="true">
-	
-		<div data-role="header" data-position="fixed">
-			<h1>White Daisy Basket</h1>
-		</div>
-		
-		<div data-role="content" data-filter="true">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"><img src="images/whitedaisybasket.jpg" alt="1" width="75" height="75" /><br />White Daisy Basket</div>
-			</div>	
-		</div>
-		
-		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
-			<div data-role="navbar">
 			
-				<ul>
-				
-					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#GitHub" data-icon="grid" class="ui-btn-active">GitHub</a></li>
-					<li><a href="#search" data-icon="search">Search</a></li>
-					<li><a href="#order" data-icon="grid">Order</a></li>
-					<li><a href="b.html" data-icon="delete">B-App</a></li>
-				
-				</ul>
-			
-			</div>
-		</div>			
-	</div>	-->			
 	
 <!--Lily List-->
 	<div data-role="page" id="lilylist" data-add-back-btn="true">
@@ -1272,8 +1421,9 @@
 				<div class="ui-block-b"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
 				<div class="ui-block-c"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
 
-			</div>	
-		</div>
+			</div>
+	
+		</div>		
 		<div data-role="footer" data-position="fixed" data-id="home" data-theme="e">
 			<div data-role="navbar">
 			
@@ -1839,6 +1989,7 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.mobile.pagination.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>	
